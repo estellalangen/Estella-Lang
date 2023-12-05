@@ -6,9 +6,76 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-<body>
 <style>
-   
+  * {box-sizing: border-box;}
+body {
+  color: white;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Homemade Apple", cursive, Arial, Verdana, sans-serif;
+  }
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    
   h1 {
   color: pink;
   text-align: center;
@@ -39,13 +106,6 @@
   margin-top: 200px;
   }
   
-  body {
-  color: white;
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  font-family: "Homemade Apple", cursive, Arial, sans-serif;
-  }
   .topnav {
   background-color: white;
   overflow: hidden;
@@ -95,6 +155,7 @@
   }
     
   #section2 {
+    height: 1000px;
     background-color: white;
     color: pink;
     font-family: "Homemade Apple";
@@ -119,8 +180,8 @@
   	margin: 50px;
   } 
   
+  
 </style> 
-  </body>
 </head>
 <body>
 <div class="topnav">
@@ -154,15 +215,58 @@ About me
 </div>
 <div id="section2">
 Projects
-<p>
-  <a href="https://openprocessing.org/sketch/1890654" target="_blank">
-  <img src="ArtGallery_page.jpg" alt="Art Gallery" width="300">
-  </a>
-    <a href="https://openprocessing.org/sketch/1766361" target="_blank">
-  <img src="Tennis.jpg" alt="Tennis" width="300">
-  </a>
-    <img src="Langenhoven_photos.pdf" alt="Pics" width="300">
-  </p>
+<p>My gallery:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Landscape.JPG" style="width:100%">
+  <div class="text">Landscape</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Portrait.JPG" style="width:100%">
+  <div class="text">Portrait</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="_MG_1720.JPG" style="width:100%">
+  <div class="text">Emotion Portrait</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 </div>
 <div id="section3">
 Education
