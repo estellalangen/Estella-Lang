@@ -14,7 +14,7 @@ body {
   color: white;
   background-image: url("giphy2.gif");
   background-repeat: no-repeat;
-  background-size: 100% 900px;
+  background-size: 100% 1000px;
   background-color: white;
   font-family: "Homemade Apple", cursive, Arial, Verdana, sans-serif;
   }
@@ -180,7 +180,7 @@ img {vertical-align: middle;}
     font-family: "Homemade Apple";
   	text-decoration: none;
   	font-size: 45px;
-  	margin: 50px;
+  	margin: 0px;
   } 
   /* Style inputs */
 input[type=text], select, textarea {
@@ -208,12 +208,16 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   color: pink;
-  background-image: url("giphy2.gif");
+  background-image: url("giphycats2.gif");
   background-repeat: no-repeat;
   background-size: 100% 900px;
   background-color: white;
   padding: 10px;
 }
+  
+  .contact-text {
+    font-size: 14px;
+  }
 
 /* Create two columns that float next to eachother */
 .column {
@@ -257,7 +261,7 @@ input[type=submit]:hover {
 <div id="section0">
 </div>
 <div id="section1">
-About me
+<h2>About me</h2>
 <p>
   <img src="Estella2.JPEG" alt="Estella" style="float:left;width:300px;height:300px;margin-top:10px;">
   <br>
@@ -272,7 +276,7 @@ About me
 
 </div>
 <div id="section2">
-Projects
+<h2>Photography</h2>
 <p>My gallery:</p>
 
 <div class="slideshow-container">
@@ -327,17 +331,11 @@ function showSlides() {
 </script>
 </div>
 <div id="section3">
-Education
+<h2>Coding Projects</h2>
 </div>
 <div id="section4">
-  Contact
-<h1>Contact me here!</h1>
-<p style="margin: 0;">226-600-2840</p>
-<p href="mailto:langenhovenestella@gmail.com"></p>
-<p style="margin: 0;">langenhovenestella@gmail.com</p>
-<p href="mailto:emlangen@uwaterloo.ca"></p>
-<p style="margin: 0;">emlangen@uwaterloo.ca</p>
-</div>
+<h2>Contact</h2>
+<h1>Want to leave a message?</h1>
 <div class="container">
   <div style="text-align:center">
   </div>
@@ -346,22 +344,23 @@ Education
     </div>
     <div class="column">
       <form action="/action_page.php">
-        <label for="fname">First Name</label>
+        <label for="fname"><p>First Name</p></label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
+        <label for="lname"><p>Last Name</p></label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
+        <label for="country"><p>Country</p></label>
         <select id="country" name="country">
           <option value="australia">Australia</option>
           <option value="canada">Canada</option>
           <option value="usa">USA</option>
         </select>
-        <label for="subject">Subject</label>
+        <label for="subject"><p>Subject</p></label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
         <input type="submit" value="Submit">
       </form>
     </div>
   </div>
+</div>
 </div>
 </body>
 </html>
