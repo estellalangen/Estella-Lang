@@ -5,7 +5,9 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-<title>Estella Langenhoven</title>   
+<title>Estella Langenhoven</title>
+</head>
+  
 <style>
 body {
   margin: 0;
@@ -79,12 +81,14 @@ img {vertical-align: middle;}
     
   h1 {
   color: pink;
-  text-align: center;
+  float: left;
   padding: 0px;
   font-family: Arial;
   text-decoration: none;
-  font-size: 15px;
-  margin-top: 150px;
+  font-size: 20px;
+  margin: 70px;
+  margin-top: -100px;
+
   }
   
   p {
@@ -105,6 +109,16 @@ img {vertical-align: middle;}
   text-decoration: none;
   font-size: 50px;
   margin-top: 200px;
+  }
+  
+  h3 {
+  color: pink;
+  padding: 0px;
+  font-family: "Homemade Apple";
+  text-decoration: none;
+  font-size: 50px;
+  margin: 70px;
+  margin-top: 300px;
   }
   
   .topnav {
@@ -221,8 +235,30 @@ img {vertical-align: middle;}
   }
   
   #section0 {
-    height: 400px;
+    height: 700px;
   }
+  
+ .profile img {
+    border-radius: 50%;
+   	animation: glow 4s infinite;
+  }
+  
+  .glow {
+  color: #FF0000, #00FF00, #0000FF;
+  animation: glow 4s infinite;
+}
+ 
+  @keyframes glow {
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 20px #FF0000, 0 0 40px #00FF00, 0 0 60px #0000FF;
+  }
+  100% {
+    opacity: 1;
+box-shadow: 0 0 20px #FF0000, 0 0 40px #00FF00, 0 0 60px #0000FF;
+}
+  } 
+  
   #section1 {
     background-color: white;
     color: pink;
@@ -375,7 +411,6 @@ input[type=submit]:hover {
   
   
 </style> 
-</head>
 <body>
 <div class="topnav">
 <a href="#section1">𐙚</a>
@@ -385,11 +420,13 @@ input[type=submit]:hover {
 <a href="#section1">Education</a>
 <a href="#section1">Contact</a>
    </div>
-
-  <h1>Hello my name is...</h1>
-  <h2>｡˚ ⋆Estella Langenhoven⋆ ˚｡</h2>
   
 <div id="section0">
+   <h1>Hello my name is...</h1>
+  <h3>Estella Langenhoven</h3>
+  <div class="profile img">
+  <img src="me.jpg" alt="memoji" style="float:right;width:300px;height:300px;margin-top:-300px;">
+  </div>
 </div>
 <div id="section1">
 <h2>About me</h2>
