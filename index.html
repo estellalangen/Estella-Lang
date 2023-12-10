@@ -12,9 +12,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: white;
-  background-image: url("giphy2.gif");
-  background-repeat: no-repeat;
-  background-size: 100% 1000px;
   background-color: white;
   font-family: "Homemade Apple", cursive, Arial, Verdana, sans-serif;
   }
@@ -141,6 +138,130 @@ img {vertical-align: middle;}
   background-color: #04AA6D;
   color: pink;
 }
+  
+  .button {
+  background-color: pink; 
+  border: none;
+  border-radius: 20px;
+  color: pink;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: width 2s, height 2s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: pink; 
+  color: white; 
+  border: 2px solid pink;
+}
+
+.button1:hover {
+  background-color: #C8A2C8;
+  color: white;
+  height: 60px;
+}
+
+.button2 {
+  background-color: pink; 
+  color: white; 
+  border: 2px solid pink;
+}
+
+.button2:hover {
+  background-color: #C8A2C8;
+  color: white;
+  height: 60px;
+}
+
+.button3 {
+  background-color: pink; 
+  color: white; 
+  border: 2px solid pink;
+}
+
+.button3:hover {
+  background-color: #C8A2C8;
+  color: white;
+  height: 60px;
+}
+
+.button4 {
+  background-color: pink;
+  color: white;
+  border: 2px solid pink;
+}
+
+.button4:hover {
+  background-color: #C8A2C8;
+  color: white;
+  height: 60px;
+  }
+
+.button5 {
+  background-color: pink;
+  color: white;
+  border: 2px solid pink;
+}
+
+.button5:hover {
+  background-color: #C8A2C8;
+  color: white;
+  height: 20px;
+  
+}
+  div.gallery {
+  border: 20px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 20px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
   #section0, #section1, #section2, #section3, #section4 {
   height: 700px;  
   }
@@ -271,9 +392,14 @@ input[type=submit]:hover {
   Ever since I was younger I knew I wanted to do something in the creative industries. At first I wanted to be a fashion designer, and later on became interested in art. This led me to the combined interest of graphic design. I aim to produce work that centers my personality as an individual and I hope you can come along that journey with me.
   <br>
   <br>
-  🎀 Hobbies: Fashion, Shopping, Design, UX/UI, Coding
+  🎀 Hobbies:
   </p>
-
+<button class="button button1">Fashion</button>
+<button class="button button2">Design</button>
+<button class="button button3">Shopping</button>
+<button class="button button4">Running</button>
+<button class="button button5">Netflix</button>
+  
 </div>
 <div id="section2">
 <h2>Photography</h2>
@@ -332,7 +458,47 @@ function showSlides() {
 </div>
 <div id="section3">
 <h2>Coding Projects</h2>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Tennis.jpg">
+      <img src="Tennis.jpg" alt="Tennis" width="600" height="100">
+    </a>
+    <div class="desc"><p>Tennis Simulator</p>
+    <br>
+      <p>A JavaScript p5 game similar to pong. This game includes easy to use functions and allows for a short fun game to play whenever you're bored.</p>
+    </div>
+  </div>
 </div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="TwineGame.png" alt="Twine Game" width="600" height="100">
+    </a>
+    <div class="desc"><p>Twine Game</p></div>
+    <br>
+    <p>A fun interactive storybased game simialr to cyoa books where you're the main character. Play as Ben's best friend as you discover their secret.</p>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="ArtGallery_page.jpg" alt="Art Gallery" width="600" height="100">
+    </a>
+    <div class="desc"><p>Art Gallery</p>
+    <br>
+    <p>an interactive art gallery created on JavaScript p5. This game allows you to generate random pieces of artwork.</p>
+    </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+</div>
+  
 <div id="section4">
 <h2>Contact</h2>
 <h1>Want to leave a message?</h1>
