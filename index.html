@@ -5,9 +5,8 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-<title>Estella Langenhoven</title>
-</head>
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Estella Langenhoven</title>  
 <style>
 body {
   margin: 0;
@@ -17,7 +16,8 @@ body {
   background-color: white;
   font-family: "Homemade Apple", cursive, Arial, Verdana, sans-serif;
   }
-  
+ 
+/* Text Style */
    h1 {
   color: pink;
   float: left;
@@ -79,7 +79,9 @@ body {
   font-size: 18px;
   margin: 0 auto;
   }
+ 
   
+/* Photography Section */  
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
@@ -137,7 +139,7 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-  
+/* top navigation */  
   .topnav {
   background-color: white;
   overflow: hidden;
@@ -166,7 +168,21 @@ img {vertical-align: middle;}
   background-color: #04AA6D;
   color: pink;
 }
+
+  /* Icons */ 
+ .fa-brands {
+    scale: 200%;
+    text-decoration: none;
+    padding: 10px 10px;
+  }
   
+  .fa-solid {
+    scale: 200%;
+    text-decoration: none;
+    padding: 10px 10px;
+  }
+  
+/* Visual buttons */
   .button {
   background-color: pink; 
   border: none;
@@ -181,6 +197,33 @@ img {vertical-align: middle;}
   transition: width 2s, height 2s;
   transition-duration: 0.4s;
   cursor: pointer;
+}
+   .buttonstyle {
+  background-color: light purple; 
+  border: none;
+  border-radius: 20px;
+  color: pink;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: width 2s, height 2s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+  
+  .buttonstyle1 {
+  background-color: light purple; 
+  color: white; 
+  border: 2px solid light purple;
+}
+
+.buttonstyle1:hover {
+  background-color: #C8A2C8;
+  color: white;
+  height: 60px;
 }
 
 .button1 {
@@ -274,7 +317,8 @@ img {vertical-align: middle;}
   #section0, #section1, #section2, #section3, #section4 {
   height: 700px;  
   }
-  
+ 
+/* Homepage */
   #section0 {
     height: 500px;
   }
@@ -323,6 +367,8 @@ img {vertical-align: middle;}
   	font-size: 45px;
   	margin: 50px;
   }
+  
+  /* CS Projects Page */
     #section3 {
     background-color: white;
     color: pink;
@@ -332,7 +378,7 @@ img {vertical-align: middle;}
   	margin: 50px;
   }
   
-   div.polaroid {
+  div.polaroid {
   float: left;
   width: 400px;
   margin: 50px auto;
@@ -341,14 +387,14 @@ img {vertical-align: middle;}
   margin-bottom: 25px;
   margin-right: 30px;
   margin-left: 30px;
-  animation: glow 3s infinite; 
 }
 
-div.container {
+	div.container {
   text-align: center;
   padding: 10px 10px 10px 10px;
 }
   
+  /* Contact Section */
     #section4 {
     background-color: white;
     color: pink;
@@ -418,7 +464,8 @@ input[type=submit]:hover {
 }
   
   
-</style> 
+</style>
+</head>
 <body>
 <div class="topnav">
 <a href="#section0">𐙚</a>
@@ -426,7 +473,8 @@ input[type=submit]:hover {
 <a href="#section1">About</a>
 <a href="#section2">Projects</a>
 <a href="#section3">Education</a>
-<a href="#section4">Contact</a>
+<a href="www.linkedin.com/in/estella-langenhoven-1444a5276/" class="fa-brands fa-linkedin"></a>
+<a href="https://github.com/estellalangen" class="fa-brands fa-github"></a>
    </div>
   
 <div id="section0">
@@ -456,6 +504,16 @@ input[type=submit]:hover {
 <button class="button button3">Shopping</button>
 <button class="button button4">Running</button>
 <button class="button button5">Netflix</button>
+  <br>
+  <br>
+<p>💬 Some platforms I've used:</p>
+<button class="buttonstyle buttonstyle1">Figma</button>
+<button class="buttonstyle buttonstyle1">Adobe Photoshop</button>
+<button class="buttonstyle buttonstyle1">Adobe Illustrator</button>
+<button class="buttonstyle buttonstyle1">JavaScript p5</button>
+<button class="buttonstyle buttonstyle1">InDesign</button>
+<button class="buttonstyle buttonstyle1">HTML and CSS</button>
+
   
 </div>
 <div id="section2">
@@ -552,6 +610,8 @@ function showSlides() {
 <div id="section4">
 <h2>Contact</h2>
 <h4>Want to leave a message?</h4>
+<a href="mailto:emlangen@uwaterloo.ca"></a>
+<h1>emlangen@uwaterloo.ca</h1>
 <div class="container">
   <div style="text-align:center">
   </div>
