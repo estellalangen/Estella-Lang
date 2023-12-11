@@ -226,8 +226,35 @@ img {vertical-align: middle;}
 .button5:hover {
   background-color: #C8A2C8;
   color: white;
-  height: 20px;
+  height: 60px;
   
+}
+.button6 {
+  background-color: pink;
+  color: white;
+  width: 150px;
+  margin: 70px;
+  
+}
+
+.button6:hover {
+  background-color: #C8A2C8;
+  color: white;
+  height: 60px;
+  margin: 70px;
+  animation: glow 3s infinite; 
+}
+.button7 {
+  background-color: pink;
+  color: white;
+  width: 150px;
+}
+
+.button7:hover {
+  background-color: #C8A2C8;
+  color: white;
+  height: 60px;
+  animation: glow 3s infinite;
 }
  
   #section0, #section1, #section2, #section3, #section4 {
@@ -235,27 +262,27 @@ img {vertical-align: middle;}
   }
   
   #section0 {
-    height: 700px;
+    height: 500px;
   }
   
  .profile img {
     border-radius: 50%;
-   	animation: glow 4s infinite;
+   	animation: glow 3s infinite;
   }
   
   .glow {
-  color: #FF0000, #00FF00, #0000FF;
-  animation: glow 4s infinite;
+  color: #FF0000, #FFC0CB, #0000FF;
+  animation: glow 3s infinite;
 }
  
   @keyframes glow {
   50% {
-    opacity: 1;
-    box-shadow: 0 0 20px #FF0000, 0 0 40px #00FF00, 0 0 60px #0000FF;
+  opacity: 1;
+  box-shadow: 0 0 20px #FF0000, 0 0 40px #FFC0CB, 0 0 60px #0000FF;
   }
   100% {
-    opacity: 1;
-box-shadow: 0 0 20px #FF0000, 0 0 40px #00FF00, 0 0 60px #0000FF;
+  opacity: 1;
+	box-shadow: 0 0 20px #FF0000, 0 0 40px #FFC0CB, 0 0 60px #0000FF;
 }
   } 
   
@@ -426,6 +453,8 @@ input[type=submit]:hover {
   <h3>Estella Langenhoven</h3>
   <div class="profile img">
   <img src="me.jpg" alt="memoji" style="float:right;width:300px;height:300px;margin-top:-300px;">
+    <button class="button button6">Student</button>
+    <button class="button button7">Designer</button>
   </div>
 </div>
 <div id="section1">
