@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="eng-ca">
   <head>
+  <!-- Meant to be viewed in desktop full screen -->
     <meta charset="utc-8">
+  <!-- fonts used -->
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Estella Langenhoven</title>  
 <style>
+  
 body {
   margin: 0;
   padding: 0;
@@ -80,7 +83,17 @@ body {
   margin: 0 auto;
   }
  
+ 
+/*
+Code copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp
+Author: w3schools.com
+Name: Automatic slideshow
+Description: Displays an automatic (animated) slideshow.
+Date retrieved: Dec. 2, 2023
+*/
   
+/* Copied code starts */
+
 /* Photography Section */  
 .mySlides {display: none;}
 img {vertical-align: middle;}
@@ -138,6 +151,7 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
+/* Copied code ends */
 
 /* top navigation */  
   .topnav {
@@ -177,6 +191,12 @@ img {vertical-align: middle;}
   }
   
   .fa-regular {
+    scale: 50%;
+    text-decoration: none;
+    padding: 10px 10px;
+  }
+  
+  .fa-solid {
     scale: 50%;
     text-decoration: none;
     padding: 10px 10px;
@@ -333,6 +353,16 @@ img {vertical-align: middle;}
   float: right; 
   }
   
+ /*
+Code altered from: https://www.w3schools.com/howto/howto_css_glowing_text.asp
+Author: w3schools.com
+Name: How To - Glowing Text
+Description: Originally for text but I altered it to work on images as a ring isplays glowing animation.
+Date retrieved: Dec. 4, 2023
+*/
+  
+/* Copied code starts */
+  /* glow animation */
   .glow {
   color: #FFC0CB, #0000FF;
   animation: glow 3s infinite;
@@ -349,6 +379,24 @@ img {vertical-align: middle;}
 }
   } 
   
+  .glowprojects {
+  color: #FFB6C1;
+  animation: glowprojects 5s infinite;
+}
+ 
+  @keyframes glowprojects {
+ 
+  50% {
+  opacity: 5;
+  box-shadow: 0 0 60px #FFB6C1;
+  }
+  100% {
+  opacity: 1;
+	box-shadow: 0 0 60px #FFB6C1;
+}
+  } 
+/* Copied code ends */
+
   #section1 {
     background-color: white;
     color: pink;
@@ -378,21 +426,31 @@ img {vertical-align: middle;}
   	margin: 50px;
   }
   
-  div.polaroid {
+  div.border {
   float: left;
   width: 400px;
   margin: 50px auto;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 100px;
+  margin-left: 100px;
+  animation: glowprojects 4s infinite;
 }
 
 	div.container {
   text-align: center;
   padding: 10px 10px 10px 10px;
 }
+  
+ /*
+Code altered from: https://www.w3schools.com/howto/howto_css_contact_section.asp
+Author: w3schools.com
+Name: How To - Contact Section
+Description: How to display a contact form
+Date retrieved: Dec. 4, 2023
+*/
+  
+/* Copied code starts */
   
   /* Contact Section */
     #section4 {
@@ -462,8 +520,8 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
-  
-  
+/* Copied code ends */
+
 </style>
 </head>
 <body>
@@ -479,7 +537,7 @@ input[type=submit]:hover {
 <div id="section0">
    <h1>Hello my name is...</h1>
   <h3>Estella Langenhoven</h3>
-  <a href="www.linkedin.com/in/estella-langenhoven-1444a5276/" class="fa-brands fa-linkedin" style="float:left;color:pink;margin-left:80px;"></a>
+  <a href="https://www.linkedin.com/in/estella-langenhoven-1444a5276/" class="fa-brands fa-linkedin" style="float:left;color:pink;margin-left:80px;"></a>
 	<a href="https://github.com/estellalangen" class="fa-brands fa-github" style="float:left;color:pink;margin-left:10px;"></a>
   <a href="https://www.instagram.com/estella.mariee/" class="fa-brands fa-instagram" style="float:left;color:pink;margin-left:10px;"></a>
   <br>
@@ -593,20 +651,23 @@ function showSlides() {
   
 <div id="section3">
 <h2>Coding Projects</h2>
-  <div class="polaroid">
-  <img src="Tennis.jpg" alt="Tennis Simulator" style="width:100%">
+  <div class="border">
+  <img src="tennisgame.png" alt="Tennis Simulator" style="width:100%">
   <div class="container">
   <h4>Tennis Simulator</h4>
+  <a href="https://github.com/estellalangen/Tennis-Simulator" class="fa-solid fa-paperclip" style="float:right;color:black;"></a>
   <br>
-  <br>
-  <p>A pong inspired game made on JavaScript p5.</p>
+  <p>A pong inspired game made on JavaScript p5. This game allows you to play a head to head game of tennis by yourself. See how many points you can rally up!</p>
   </div>
 </div>
 
-<div class="polaroid">
-  <img src="ArtGallery_page.jpg" alt="Art Gallery" style="width:100%">
+<div class="border">
+  <img src="artgallery.png" alt="Art Gallery" style="width:100%">
   <div class="container">
-  <p>a random generated Art Gallery.</p>
+  <h4>Art Gallery</h4>
+  <a href="https://github.com/estellalangen/Art-Gallery-Generator" class="fa-solid fa-paperclip" style="float:right;color:black;"></a>
+  <br>
+  <p>A random generated Art Gallery that generates art when the button is pressed. Created on JavaScript p5</p>
   </div>
 </div>
 </div>
